@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		global = global || {};
+		global.window = window;
+		global.document = window.document;
+		global.navigator = window.navigator;
+	</script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div ui-view></div>
+	<a ui-sref="state1">State 1</a>
+    <a ui-sref="state2">State 2</a>
+	<script src="app.min.js"></script>
+</body>
+</html>
